@@ -29,6 +29,7 @@ async function bootstrap() {
   const prefix = '/v1';
   app.setGlobalPrefix(prefix);
   app.useGlobalInterceptors(new ResponseInterceptor(winstonLogger));
+  app.enableCors({ origin: 'https://saber2pr.top' });
 
   const PORT = 3000;
   await app.listen(PORT, () =>
