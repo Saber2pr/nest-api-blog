@@ -4,6 +4,6 @@ import { Controller, Get } from '@nestjs/common';
 export class AppController {
   @Get()
   getHello(): string {
-    return 'hello nestjs!';
+    return '这是saber2pr的博客哦, 不许捣乱qwq！！请左转>> https://saber2pr.top/';
   }
 }

@@ -21,6 +21,7 @@ export class VisitService {
       visited.pv++;
     } else {
       visited = this.visitEntity.create(visit);
+      visited.pv = 1;
     }
     return this.visitEntity.save(visited);
   }
