@@ -8,6 +8,6 @@ export class VisitEntity {
   @Column('varchar', { length: 255, default: '', comment: '页面' })
   pagePath: string;
 
-  @Column('int', { default: 0, comment: '次数' })
+  @Column('int', { default: 1, comment: '次数' })
   pv: number;
 }
