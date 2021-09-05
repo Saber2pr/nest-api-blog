@@ -1,0 +1,39 @@
+## 1. nest-api-hello
+hello接口服务
+
+## 2. 变量定义
+
+@base=http://localhost:3000/v1
+
+## 3. 接口列表
+
+### 2.1 待补充
+GET {{base}}/
+
+### 2.2 创建单词
+POST {{base}}/hello/word/create
+Content-Type: application/json
+
+{
+  "word": "string, 必选, 单词"
+}
+
+### 2.3 更新单词
+POST {{base}}/hello/word/update
+Content-Type: application/json
+
+{
+  "id": "number, 必选, 单词id",
+  "word": "string, 必选, 单词"
+}
+
+### 2.4 获取单词
+GET {{base}}/hello/word/list?id=id
+
+### 2.5 删除单词
+DELETE {{base}}/hello/word/delete
+Content-Type: application/json
+
+{
+  "id": "number, 必选, 单词id"
+}

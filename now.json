@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "name": "nest-api-blog",
+  "build": {
+    "env": {
+      "VERCEL": "true"
+    }
+  },
+  "builds": [
+    {
+      "src": "dist/main.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/main.js"
+    }
+  ]
+}
