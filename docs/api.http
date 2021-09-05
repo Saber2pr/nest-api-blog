@@ -1,5 +1,5 @@
-## 1. nest-api-hello
-hello接口服务
+## 1. nest-api-blog
+blog接口服务
 
 ## 2. 变量定义
 
@@ -10,30 +10,13 @@ hello接口服务
 ### 2.1 待补充
 GET {{base}}/
 
-### 2.2 创建单词
-POST {{base}}/hello/word/create
+### 2.2 创建访问
+POST {{base}}/visit/pv
 Content-Type: application/json
 
 {
-  "word": "string, 必选, 单词"
+  "pagePath": "string, 必选, 页面"
 }
 
-### 2.3 更新单词
-POST {{base}}/hello/word/update
-Content-Type: application/json
-
-{
-  "id": "number, 必选, 单词id",
-  "word": "string, 必选, 单词"
-}
-
-### 2.4 获取单词
-GET {{base}}/hello/word/list?id=id
-
-### 2.5 删除单词
-DELETE {{base}}/hello/word/delete
-Content-Type: application/json
-
-{
-  "id": "number, 必选, 单词id"
-}
+### 2.3 获取访问
+GET {{base}}/visit/list

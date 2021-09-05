@@ -6,16 +6,15 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { mysqlOptions, winstonOptions } from './config';
 import { LoggerMiddleware } from './middleware/logger.middleware';
-import { HelloModule } from './modules/hello/hello.module';
+import { VisitModule } from './modules/visit/visit.module';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot(mysqlOptions),
     WinstonModule.forRoot(winstonOptions),
-    HelloModule,
+    VisitModule,
   ],
   controllers: [AppController],
-  providers: [],
 })
 export class AppModule {
   configure(consumer: MiddlewareConsumer): any {

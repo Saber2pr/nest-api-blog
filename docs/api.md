@@ -1,26 +1,15 @@
-## 1. nest-api-hello
-hello接口服务
+## 1. nest-api-blog
+blog接口服务
 
 ## 2. 接口列表
-### 2.1 /hello/word/create
-* 接口：POST /hello/word/create
-* 说明：创建单词
+### 2.1 /visit/pv
+* 接口：POST /visit/pv
+* 说明：创建访问
 * 参数：
-  - word: string, 必选, 单词
+  - pagePath: string, 必选, 页面
 
-### 2.2 /hello/word/update
-* 接口：POST /hello/word/update
-* 说明：更新单词
+### 2.2 /visit/list
+* 接口：GET /visit/list
+* 说明：获取访问
 * 参数：
-  - id: number, 必选, 单词id
-  - word: string, 必选, 单词
-
-### 2.3 /hello/word/list
-* 接口：GET /hello/word/list
-* 说明：获取单词
-* 参数：
-  - id: number, 必选, 单词id
-
-### 2.4 /hello/word/delete
-* 接口：DELETE /hello/word/delete
-* 说明：删除单词
+  - sort: string, 排序
