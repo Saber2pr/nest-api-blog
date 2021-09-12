@@ -55,3 +55,7 @@ $ yarn run test:e2e
 # test coverage
 $ yarn run test:cov
 ```
+
+### Other
+
+[next-ssr-blog](https://github.com/Saber2pr/next-ssr-blog): Blog SSR. Next.js + Docker + Nginx + JsDelivr + Github Action
